@@ -1,16 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
+import { createRoot } from "react-dom/client";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import enTranslations from "@shopify/polaris/locales/en.json";
+// @ts-ignore
+import translations from "@shopify/polaris/locales/en.json";
 import { AppProvider } from "@shopify/polaris";
 
-ReactDOM.render(
-  <AppProvider i18n={enTranslations}>
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(
+  <
+// @ts-ignore
+  AppProvider i18n={translations}>
     <App />
-  </AppProvider>,
-  document.getElementById("root")
+  </AppProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
