@@ -98,11 +98,9 @@ function Header() {
   );
 
   return (
-    <div style={{ height: "250px" }}>
+    <div style={{ height: "50px" }}>
       <Frame topBar={topBarMarkup} logo={logo}>
-        <Button onClick={handleThemeChange}>
-          Toggle between dark and light themes
-        </Button>
+   
       </Frame>
     </div>
   );
